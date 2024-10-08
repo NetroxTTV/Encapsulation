@@ -2,6 +2,11 @@
 #include <vector>
 #include "C:\Users\lduperray\source\repos\Encapsulation\Header1.h"
 #include "C:\Users\lduperray\source\repos\Encapsulation\Header1.cpp"
+#include "C:\Users\lduperray\source\repos\Encapsulation\ex1.h"
+#include "C:\Users\lduperray\source\repos\Encapsulation\ex1.cpp"
+#include "C:\Users\lduperray\source\repos\Encapsulation\Entity.cpp"
+#include "C:\Users\lduperray\source\repos\Encapsulation\Entity.h"
+
 using namespace std;
 
 /*void addOneRef(int& a) {
@@ -22,19 +27,19 @@ int main(int argv, const char  * [])
 
 
 
-    cout << "Hello World!\n";
+    /*cout << "Hello World!\n";
     cin >> str; 
     cout << str << endl;
 
     int a = 1;
 
-    // addOne(&a);   
+    addOne(&a);   
 
     cout << a;
 
  
 
-    /*string mot = "";
+    string mot = "";
 
     while(1){
         cout << "meow meow meow\n";
@@ -47,15 +52,22 @@ int main(int argv, const char  * [])
     }*/
 
 
-    Point point;
+    /*Point point;
 
     point.x = 1.2f;
     point.y = 6.9f;
     point.z = 5.9f;
 
-    cout << point.ToString();
+    cout << point.ToString();*/
 
-    
+
+
+    Entity Entity(1.2, 5.2);
+
+    Entity.setx(1.2);
+    Entity.sety(1.32);
+    cout << Entity.getx() << Entity.gety() << endl;
+
     return 0;
 
 }
