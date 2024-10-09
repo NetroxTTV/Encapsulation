@@ -8,6 +8,7 @@
 #include "C:\Users\lduperray\source\repos\Encapsulation\Entity.h"
 #include "C:\Users\lduperray\source\repos\Encapsulation\AMovable.cpp"
 #include "C:\Users\lduperray\source\repos\Encapsulation\AMovable.h"
+#include "Alive.h"
 
 using namespace std;
 
@@ -53,20 +54,25 @@ int main(int argv, const char  * [])
 
     //cout << entity.ToString() << endl;
 
-    Vector2 rawr;
+    //Vector2 rawr;
 
-    AMovable amov(rawr, 0);
+    //AMovable amov(rawr, 0);
 
-    amov.setVitesse(516);
+    //amov.setVitesse(516);
 
-    Vector2 new_direction(2.5, 1.3);
-    amov.setDirection(new_direction);
+    //Vector2 new_direction(2.5, 1.3);
+    //amov.setDirection(new_direction);
 
-    amov.Deplacement(new_direction);
+    //amov.Deplacement(new_direction);
 
-    cout << amov.ToString() << endl;
+    //cout << amov.ToString() << endl;
 
+    Alive alive(5);
+    alive.SetHPMax(10);
+    alive.SetHP(7);
+    alive.Damage(5);
 
+    cout << alive.HP << endl;
 
 
 
