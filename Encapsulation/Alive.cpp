@@ -13,5 +13,9 @@ void Alive::SetHP(float number) {
 }
 
 void Alive::Damage(float dmg) {
+
 	HP = HP - dmg;
+	if (HP < 0) {
+		HP = 0;
+	};
 }
