@@ -44,18 +44,33 @@ int main(int argv, const char  * [])
        vector2.SetX(2.3);
        vector2.SetY(4.3);
        cout << vector2.GetX() << "\n" << vector2.GetY();*/
-       
-       
     
-    
-    
-    Vector2 posi;
-    
-    Entity entity(posi);
+    //Vector2 posi;
+    //
+    //Entity entity(posi);
 
-    entity.SetPos(1.2f, 5.3);
+    //entity.SetPos(1.2f, 5.3);
 
-    cout << entity.ToString() << endl;
+    //cout << entity.ToString() << endl;
+
+    Vector2 rawr;
+
+    AMovable amov(rawr, 0);
+
+    amov.setVitesse(516);
+
+    Vector2 new_direction(2.5, 1.3);
+    amov.setDirection(new_direction);
+
+    amov.Deplacement(new_direction);
+
+    cout << amov.ToString() << endl;
+
+
+
+
+
+
 
     return 0;
 

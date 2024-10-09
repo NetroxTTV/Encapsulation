@@ -1,33 +1,28 @@
 #include "Entity.h"
 
-Entity::Entity(float i, float j) {
-
-	x = i;
-	y = j;
+Entity::Entity(Vector2 position) : pos(position){
 
 }
 
-void Entity::setx(float i) {
+void Entity::SetPos(float i, float j) {
 
-	x = i;
-
-}
-
-void Entity::sety(float j) {
-
-	y = j;
+	Vector2 position(i, j);
+	pos = position;
 
 }
 
-float Entity::getx() {
 
-	return x;
+Vector2 Entity::GetPos() {
 
-}
-
-float Entity::gety() {
-
-	return y;
+	return pos;
 
 }
 
+std::string Entity::ToString() {
+
+	std::stringstream stream;
+
+	stream << "Point : " << " x: " << pos.GetX() << " y: " << pos.GetY();
+
+	return stream.str();
+}

@@ -1,18 +1,19 @@
 #pragma once
+#include "vector2.h"
 
 
 class Entity {
+
 public:
-	float x;
-	float y;
+	Vector2 pos;
 
-	Entity(float i, float j);
+	Entity(Vector2 position);
 
-	virtual void setx(float i);
-	virtual void sety(float j);
+	virtual void SetPos(float i, float j);
 
-	virtual float getx();
-	virtual float gety();
+	virtual Vector2 GetPos();
+
+	virtual string ToString();
 
 };
 
