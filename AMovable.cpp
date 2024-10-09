@@ -7,7 +7,7 @@ AMovable::AMovable(Vector2 dir, float speed) : vecteurUni(dir), vitesse(speed) {
 void AMovable::setVitesse(float j) {
 
 	vitesse = j;
-
+	 
 }
 
 void AMovable::setDirection(Vector2 dir) {
