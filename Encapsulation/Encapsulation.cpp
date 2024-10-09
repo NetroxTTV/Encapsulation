@@ -2,71 +2,60 @@
 #include <vector>
 #include "C:\Users\lduperray\source\repos\Encapsulation\Header1.h"
 #include "C:\Users\lduperray\source\repos\Encapsulation\Header1.cpp"
-#include "C:\Users\lduperray\source\repos\Encapsulation\ex1.h"
-#include "C:\Users\lduperray\source\repos\Encapsulation\ex1.cpp"
+#include "C:\Users\lduperray\source\repos\Encapsulation\vector2.h"
+#include "C:\Users\lduperray\source\repos\Encapsulation\vector2.cpp"
 #include "C:\Users\lduperray\source\repos\Encapsulation\Entity.cpp"
 #include "C:\Users\lduperray\source\repos\Encapsulation\Entity.h"
+#include "C:\Users\lduperray\source\repos\Encapsulation\AMovable.cpp"
+#include "C:\Users\lduperray\source\repos\Encapsulation\AMovable.h"
 
 using namespace std;
 
-/*void addOneRef(int& a) {
-    a += 1;
-}
-
-void addOne(int* a) {
-    *a += 1;
-}*/
-
-
-
 int main(int argv, const char  * [])
 {
-    vector<string> strArray;
+    /*
+       vector<string> strArray;
 
-    string str;
+       cout << "Hello, World" << endl;
 
-
-
-    /*cout << "Hello World!\n";
-    cin >> str; 
-    cout << str << endl;
-
-    int a = 1;
-
-    addOne(&a);   
-
-    cout << a;
-
- 
-
-    string mot = "";
-
-    while(1){
-        cout << "meow meow meow\n";
-        cin >> mot;
-        strArray.push_back(mot);
-
-        for (int i(0); i < strArray.size(); i++) {
-            cout << strArray[i] << endl;
-        }
-    }*/
+       string str;
+       //string word = "toto";
 
 
-    /*Point point;
+       int a = 1;
+       int b = 1;
 
-    point.x = 1.2f;
-    point.y = 6.9f;
-    point.z = 5.9f;
+       addOnep(&a);
+       addOne(b);
 
-    cout << point.ToString();*/
+       cout << a << endl;
+       cout << b << endl;
 
 
+       Point point;
+       point.x = 0.1f;
+       point.y = 7.2f;
+       point.z = 3.4f;
 
-    Entity Entity(1.2, 5.2);
+       cout << point.ToString();
 
-    Entity.setx(1.2);
-    Entity.sety(1.32);
-    cout << Entity.getx() << Entity.gety() << endl;
+       
+       Vector2 vector2(1.2, 4.5);
+       vector2.SetX(2.3);
+       vector2.SetY(4.3);
+       cout << vector2.GetX() << "\n" << vector2.GetY();*/
+       
+       
+    
+    
+    
+    Vector2 posi;
+    
+    Entity entity(posi);
+
+    entity.SetPos(1.2f, 5.3);
+
+    cout << entity.ToString() << endl;
 
     return 0;
 
