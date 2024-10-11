@@ -1,5 +1,11 @@
+#include <sstream>
 #include "StaticObject.h"
 
-void StaticObject::SetXY(float i, float j){
-	std::cout << "Afficher “Static Object just created at x = " << GetPos().GetX() << " and y = " << GetPos().GetY();
+std::string StaticObject::ToString() {
+    std::stringstream stream;
+
+    stream << "Static Object just created at x " << GetPos().GetX() << "<- ici la position X et ici la position y -> " << GetPos().GetY();
+
+    return stream.str();
+
 }

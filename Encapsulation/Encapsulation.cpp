@@ -68,7 +68,7 @@ int main(int argv, const char  * [])
     //cout << amov.ToString() << endl;
 
     Alive alive(5);
-    alive.SetHPMax(10);
+    alive.SetHPMax(100);
     alive.SetHP(7);
     alive.Damage(5);
 
