@@ -7,7 +7,7 @@ Entity::Entity(Vector2 position) : pos(position){
 void Entity::SetPos(float i, float j) {
 
 	Vector2 position(i, j);
-	pos = position;
+	pos = position; 
 
 }
 

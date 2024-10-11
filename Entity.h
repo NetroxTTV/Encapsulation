@@ -9,7 +9,7 @@ public:
 
 	Entity(Vector2 position);
 
-	virtual void SetPos(float i, float j);
+	virtual void SetPos(float i, float j); 
 
 	virtual Vector2 GetPos();
 
