@@ -4,14 +4,20 @@
 
 class BreakableObject : public Entity, public Alive
 {
+
 public:
-	virtual float SetXY_HPMax(float i, float j, float HPM) {
+	float x;
+	float y;
+	float HP;
+	BreakableObject(float i, float j, float HPM);
+
+	virtual void SetXY_HPMax(float i, float j, float HPM) {
 		SetPos(i, j);
 		SetHP(HPM);
 	}
 
+	virtual void Damage(float dmg) override;
+
 	std::string ToString();
-
-
 };
 

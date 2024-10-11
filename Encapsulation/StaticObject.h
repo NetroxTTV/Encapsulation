@@ -7,7 +7,11 @@ class StaticObject : public Entity
 {
 
 public:
-	virtual float SetXY(float i, float j) {
+	float x;
+	float y;
+	StaticObject(float i, float j);
+
+	virtual void SetXY(float i, float j) {
 		SetPos(i, j);
 	}
 

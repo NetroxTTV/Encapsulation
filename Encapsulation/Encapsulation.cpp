@@ -6,9 +6,10 @@
 #include "C:\Users\lduperray\source\repos\Encapsulation\vector2.cpp"
 #include "C:\Users\lduperray\source\repos\Encapsulation\Entity.cpp"
 #include "C:\Users\lduperray\source\repos\Encapsulation\Entity.h"
-#include "C:\Users\lduperray\source\repos\Encapsulation\AMovable.cpp"
 #include "C:\Users\lduperray\source\repos\Encapsulation\AMovable.h"
 #include "Alive.h"
+#include "StaticObject.h"
+#include "BreakableObject.h"
 
 using namespace std;
 
@@ -67,14 +68,22 @@ int main(int argv, const char  * [])
 
     //cout << amov.ToString() << endl;
 
-    Alive alive(5);
-    alive.SetHPMax(100);
-    alive.SetHP(7);
-    alive.Damage(5);
+    //Alive alive(5);
+    //alive.SetHPMax(100);
+    //alive.SetHP(7);
+    //alive.Damage(5);
 
-    cout << alive.HP << endl;
+    //cout << alive.HP << endl;
 
 
+ /*   StaticObject stat(1,5);
+    stat.SetXY(6.9, 6.9);
+    cout << stat.ToString();*/
+
+    BreakableObject breakO(1.5,2.5,50);
+    breakO.SetXY_HPMax(4.6,5.5,10);
+    breakO.Damage(5);
+    cout << breakO.ToString() << endl;
 
 
 
