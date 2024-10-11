@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Vector2
+class Vector2 
 {
     float x;
     float y;
