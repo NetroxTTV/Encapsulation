@@ -1,8 +1,12 @@
 #include "Alive.h"
 
-Alive::Alive(float HP) {
+Alive::Alive(float Hp) {
 
 }
+
+float Alive::GetHpm() {
+	return HPMax;
+};
 
 float Alive::SetHPMax(float HPMax) {
 	return HPMax;
@@ -19,3 +23,4 @@ void Alive::Damage(float dmg) {
 		HP = 0;
 	};
 }
+

@@ -1,4 +1,5 @@
 #include "Entity.h"
+#include <sstream>
 
 Entity::Entity(Vector2 position) : pos(position){
 

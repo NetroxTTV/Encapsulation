@@ -1,15 +1,14 @@
 #include <iostream>
 #include <vector>
-#include "C:\Users\lduperray\source\repos\Encapsulation\Header1.h"
-#include "C:\Users\lduperray\source\repos\Encapsulation\Header1.cpp"
-#include "C:\Users\lduperray\source\repos\Encapsulation\vector2.h"
-#include "C:\Users\lduperray\source\repos\Encapsulation\vector2.cpp"
-#include "C:\Users\lduperray\source\repos\Encapsulation\Entity.cpp"
-#include "C:\Users\lduperray\source\repos\Encapsulation\Entity.h"
-#include "C:\Users\lduperray\source\repos\Encapsulation\AMovable.h"
+#include "Header1.h"
+#include "vector2.h"
+#include "Entity.h"
+#include "Abstraite.h"
 #include "Alive.h"
 #include "StaticObject.h"
 #include "BreakableObject.h"
+#include "Mob.h"
+
 
 using namespace std;
 
@@ -80,11 +79,17 @@ int main(int argv, const char  * [])
     stat.SetXY(6.9, 6.9);
     cout << stat.ToString();*/
 
-    BreakableObject breakO(1.5,2.5,50);
-    breakO.SetXY_HPMax(4.6,5.5,10);
-    breakO.Damage(5);
-    cout << breakO.ToString() << endl;
+    //BreakableObject breakO(1.5,2.5,50);
+    //breakO.SetXY_HPMax(4.6,5.5,10);
+    //breakO.Damage(5);
+    //cout << breakO.ToString() << endl;
 
+    Vector2 vec2(1.2f, 3.6f);
+    Vector2 new_dir(2.6f, 8.6f);
+    Mob mob(7.4f, 5.6f, 10, vec2);
+    mob.Damage(5);
+    mob.Deplacer(new_dir);
+    cout << mob.ToString() << endl;
 
 
     return 0;

@@ -1,5 +1,5 @@
 #pragma once
-#include "C:\Users\lduperray\source\repos\Encapsulation\Entity.h"
+#include "Entity.h"
 #include "Alive.h"
 
 class BreakableObject : public Entity, public Alive

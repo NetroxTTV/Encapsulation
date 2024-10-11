@@ -9,6 +9,7 @@ public:
 	virtual float SetHPMax(float HPMax);
 	virtual void SetHP(float number);
 	virtual void Damage(float dmg);
+	virtual float GetHpm();
 
 };
 

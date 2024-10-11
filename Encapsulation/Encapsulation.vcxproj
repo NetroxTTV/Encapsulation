@@ -127,19 +127,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Abstraite.cpp" />
     <ClCompile Include="Alive.cpp" />
     <ClCompile Include="Attacker.cpp" />
     <ClCompile Include="BreakableObject.cpp" />
     <ClCompile Include="Encapsulation.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Header1.cpp" />
     <ClCompile Include="Mob.cpp" />
     <ClCompile Include="StaticObject.cpp" />
+    <ClCompile Include="vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Abstraite.h" />
     <ClInclude Include="Alive.h" />
     <ClInclude Include="Attacker.h" />
     <ClInclude Include="BreakableObject.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Header1.h" />
     <ClInclude Include="Mob.h" />
     <ClInclude Include="StaticObject.h" />
+    <ClInclude Include="vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

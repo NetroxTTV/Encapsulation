@@ -1,6 +1,6 @@
 #include <sstream>
 #include "StaticObject.h"
-#include "C:\Users\lduperray\source\repos\Encapsulation\Entity.h"
+#include "Entity.h"
 
 StaticObject::StaticObject(float i, float j) : Entity(pos){
 

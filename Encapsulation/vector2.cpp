@@ -1,4 +1,5 @@
 #include "vector2.h"
+#include <sstream>
 
 Vector2::Vector2(float i, float j) {
 	x = i;

@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "C:\Users\lduperray\source\repos\Encapsulation\Entity.h"
+#include "Entity.h"
 
 class StaticObject : public Entity
 {
