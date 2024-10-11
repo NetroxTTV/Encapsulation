@@ -7,7 +7,7 @@ Mob::Mob(float i, float j, float HPM, Vector2 direction) : Entity(pos), Alive(HP
     y = j;
     HP = HPM;
 
-}
+} 
 
 std::string Mob::ToString() {
     std::stringstream stream;

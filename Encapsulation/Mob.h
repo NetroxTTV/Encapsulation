@@ -9,7 +9,7 @@ class Mob : public Entity, public Alive, public AMovable
 public:
 	float x;
 	float y;
-	float HP;
+	float HP; 
 	Vector2 direction;
 	Mob(float i, float j, float HPM, Vector2 direction);
 
