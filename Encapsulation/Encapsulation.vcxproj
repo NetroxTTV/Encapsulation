@@ -130,10 +130,12 @@
     <ClCompile Include="Alive.cpp" />
     <ClCompile Include="Attacker.cpp" />
     <ClCompile Include="Encapsulation.cpp" />
+    <ClCompile Include="StaticObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Alive.h" />
     <ClInclude Include="Attacker.h" />
+    <ClInclude Include="StaticObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
